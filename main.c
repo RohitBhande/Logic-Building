@@ -1,20 +1,40 @@
-#include <stdio.h>
-  
-  void Accept(int iNo)
-  {
-	  int iCnt = 0;
-	  
- for( iCnt ;iCnt< iNo ;iCnt++ ) 
-	 {   
-	printf("*\n");
-	}  
-}
-int main() 
-{  
-	int iValue = 0;
-	iValue = 5; 
- 
-	Accept(iValue); 
- return 0; 
- }
+#include<stdio.h> 
 
+typedef int BOOL;
+  #define TRUE 1
+  #define FALSE 0
+  
+BOOL Check( int iNo)
+  {
+	  if(
+	  ( iNo % 5) == 0) 
+		  {   
+	  return TRUE;
+	  }  
+	  else  
+		  {   
+	  return FALSE ; 
+	  }
+	  }
+	  
+	  int main()
+	  { 
+	  int iValue = 0;  
+	  BOOL bRet = FALSE;
+	  
+ printf("Enter number");  
+ scanf("%d" ,&iValue); 
+ 
+ bRet = Check(iValue); 
+ if(bRet == TRUE)  
+	 {   
+ printf("Divisible by 5");
+ 
+ } 
+ else   
+ {  
+ printf("Not Divisible by 5"); 
+ } 
+	 
+	 return 0; 
+}
