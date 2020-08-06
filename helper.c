@@ -1,14 +1,11 @@
-#include"header.h"
+#include "stdio.h"
 
-
-int divide(int no1,int no2)
-{
-	int iRslt=0;
-	if(no2==0)
-	{
-		return -1;
-	}
-	iRslt= no1/no2;
-	return iRslt;
-	
+void Accept(int iNo)
+  {
+	  int iCnt = 0;
+	  
+ for( iCnt ;iCnt< iNo ;iCnt++ ) 
+	 {   
+	printf("*\n");
+	}  
 }

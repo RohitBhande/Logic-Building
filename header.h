@@ -1,4 +1,3 @@
 #include<stdio.h>
 
-
-int divide(int,int);
+void Accept(int);

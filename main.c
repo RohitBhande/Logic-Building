@@ -1,16 +1,20 @@
-#include"header.h"
-
-int main()
-{  
-int iNo1=15;
-int iNo2=3;
-int iResult;
-
-	printf("Entered 1st number::%d\n",iNo1);
-	printf("Entered 2nd number::%d\n",iNo2);
-	iResult = divide(iNo1,iNo2);	
-	printf("Division of two number\n%d",iResult);
-	
-	return 0;
-	
+#include <stdio.h>
+  
+  void Accept(int iNo)
+  {
+	  int iCnt = 0;
+	  
+ for( iCnt ;iCnt< iNo ;iCnt++ ) 
+	 {   
+	printf("*\n");
+	}  
 }
+int main() 
+{  
+	int iValue = 0;
+	iValue = 5; 
+ 
+	Accept(iValue); 
+ return 0; 
+ }
+
